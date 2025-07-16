@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Buttonpanel from './Components/Buttonpanel';
 import { evaluate } from 'mathjs';
-import Display from './Components/Display';
+// import Display from './Components/Display';
 
 function App() {
 
@@ -30,11 +30,12 @@ function App() {
         return val + a;
     }) 
   }
-console.log("from display",display)
+// console.log("from display",display)
   return (
     <div className="App">
-      <Display display={display}/>
+      {/* <Display display={display}/> */}
       <Buttonpanel send={(a) => { numberappend(a) }}/>
+      <Buttonpanel display={display}/>
     </div>
   );
 }

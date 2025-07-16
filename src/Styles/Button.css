@@ -267,3 +267,9 @@ body {
     box-shadow: -2px -2px 2px #00000020, 2px 2px 1px #ffffff20;
     font-size: 15px;
 }
+.display{
+    color: black;
+}
+.dchange{
+    margin-top: 600px;
+}

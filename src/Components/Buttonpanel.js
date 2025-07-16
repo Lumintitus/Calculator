@@ -1,4 +1,5 @@
 import '../Styles/Button.css'
+import '../Components/Display'
 
 export default function Buttonpanel(props) {
     return (
@@ -6,6 +7,9 @@ export default function Buttonpanel(props) {
             {
                 <div className="container">
                     <div className="mx-w calculator-body">
+                        <div className='display'>
+                            <h1>{props.display}</h1>
+                        </div>
                         <div className="keys">
                             <button className='key'onClick={() => { props.send("1") }}>1</button>
                             <button className='key'onClick={() => { props.send("2") }}>2</button>
