@@ -34,8 +34,7 @@ function App() {
   return (
     <div className="App">
       {/* <Display display={display}/> */}
-      <Buttonpanel send={(a) => { numberappend(a) }}/>
-      <Buttonpanel display={display}/>
+      <Buttonpanel send={(a) => { numberappend(a) }} display={display}/>
     </div>
   );
 }
